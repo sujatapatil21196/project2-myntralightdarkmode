@@ -1,0 +1,526 @@
+<html>
+
+<head>
+  <title>Myntra website</title>
+  <link href="https://i.ibb.co/v30dryD/logo.png" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="myntra.css">
+  <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
+  <script src="myntra.js"></script>
+</head>
+
+<body>
+  <!--Navbar-->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar1 nav-inverse">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://i.ibb.co/v30dryD/logo.png" width="50px" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="men.html">MEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WOMEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">KIDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BEAUTY</a>
+          </li>
+        </ul>
+      <div class="container-fluid">
+        <form class="d-flex" id="button1">
+          <input class="form-control me-2" type="search" placeholder="Search for products,brands and more"
+            aria-label="Search" id="input">
+          <button class="btn btn-outline-success btn1" type="submit">Search</button>
+        </form>
+      <button class="btn btn-outline-success btn5" type="submit" onclick="myFunction()"><i class="fa-regular fa-moon"></i></button>
+      </div>
+        <div class="right">
+          <div>
+            <i class="fa-regular fa-user icon" style="margin-left:25px;"></i>
+            <i class="fa-regular fa-heart icon" style="margin-left:50px;"> </i>
+            <i class="fa-solid fa-cart-shopping" style="margin-left:40px;color:gray;"></i>
+          </div>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Profile</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+  </nav>
+  <!--Navbar end-->
+  <!--Slider Starts-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner slider">
+      <div class="carousel-item active">
+        <img src="https://i.ibb.co/0mnX5FJ/slide2.webp" alt="slide2" border="0" height="400px" ; class="d-block w-100">
+      </div>
+      <div class="carousel-item slider">
+        <img src="https://i.ibb.co/1X5T3rm/slide1.jpg" alt="slide1" border="0" height="400px" ; class="d-block w-100">
+      </div>
+      <div class="carousel-item slider">
+        <img src="https://i.ibb.co/ph77frx/slide3.webp" alt="slide3" border="0" height="400px" ; class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Slider End-->
+  <!--Deal of the day-->
+  <h5 style="margin:50px" class="h4">DEAL OF THE DAY</h5>
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/RhNwNXc/kurta.jpg" alt="kurta" border="0" width="100%" height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Kurtas</p>
+        <p class="para2">30-50% OFF</p>
+        <p class="p">Under &#8360;.799</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/bdjpBZH/dress.jpg" alt="dress" border="0" width="100%" height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Dresses</p>
+        <p class="para2">40-50% OFF</p>
+        <p class="p">Under &#8360;.999</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/sgPfWGW/heels2.jpg" alt="heels2" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Flats & Heels</p>
+        <p class="para2">20-30% OFF</p>
+        <p class="p">Under &#8360;.899</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/3CSWDzF/watches.jpg" alt="watches" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Watches</p>
+        <p class="para2">10-20% OFF</p>
+        <p class="p">Under &#8360;.699</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/99bx9Dz/bags.jpg" alt="bags" border="0" width="100%" height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Bags</p>
+        <p class="para2">30-40% OFF</p>
+        <p class="p">Under &#8360;.599</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/fHm0nFk/glasses.jpg" alt="glasses" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Glasses</p>
+        <p class="para2">10-30% OFF</p>
+        <p class="p">Under &#8360;.399</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Top Picks-->
+  <h5 class="h4">TOP PICKS</h5>
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/2WvbKFD/kurta2.jpg" alt="kurta2" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Kurtas</p>
+        <p class="para2">30-50% OFF</p>
+        <p class="p">Under &#8360;.799</p>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/GWr1yFP/dress2.jpg" alt="dress2" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Dresses</p>
+        <p class="para2">40-50% OFF</p>
+        <p class="p">Under &#8360;.999</p>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/t3r9LrG/flats.jpg" alt="flats" border="0" width="100%" height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Flats & Heels</p>
+        <p class="para2">5-10% OFF</p>
+        <p class="p">Under &#8360;.899</p>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="image">
+        <a href="#"><img src="https://i.ibb.co/60zLqdR/watches2.jpg" alt="watches2" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail">
+        <p class="para">Watches</p>
+        <p class="para2">10-50% OFF</p>
+        <p class="p">Under &#8360;.699</p>
+      </div>
+    </div>
+
+  </div>
+  <!--Categories to Products-->
+  <h5 class="h4">CATEGORIES TO PRODUCTS</h5>
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/tqhM4Ds/kurta3.jpg" alt="kurta3" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Kurtas Sets</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/KKkgLnX/handbags.jpg" alt="handbags" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Handbags</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/sbc5jmw/tshirt.jpg" alt="tshirt" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">T-Shirt</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/JQZKFcg/sarees.jpg" alt="sarees" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Sarees</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/Tc8cyFJ/shirt.jpg" alt="shirt" border="0" width="100%" height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Shirts</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/NtJwvrp/jewellery.jpg" alt="jewellery" border="0" width="100%"
+            height="70%">
+        </a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Jewellery</p>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="col-lg-2">
+        <div class="image1">
+          <a href="#"><img src="https://i.ibb.co/v4Q5qTG/beauty.jpg" alt="beauty" border="0" width="100%"
+              height="70%"></a>
+        </div>
+
+        <div class="detail1">
+          <p class="para1">Beauty</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="image1">
+          <a href="#"><img src="https://i.ibb.co/QFLjLPv/shoes.jpg" alt="shoes" border="0" width="100%"
+              height="70%"></a>
+        </div>
+        <div class="detail1">
+          <p class="para1">Shoes</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="image1">
+          <a href="#"><img src="https://i.ibb.co/sgPfWGW/heels2.jpg" alt="heels2" border="0" width="100%" height="70%">
+          </a>
+        </div>
+        <div class="detail1">
+          <p class="para1">Heels & Flats</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="image1">
+          <a href="#"><img src="https://i.ibb.co/2N1pYxJ/tops.jpg" alt="tops" border="0" width="100%" height="70%"></a>
+        </div>
+        <div class="detail1">
+          <p class="para1">Tops</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="image1">
+          <a href="#"><img src="https://i.ibb.co/3CSWDzF/watches.jpg" alt="watches" border="0" width="100%"
+              height="70%"></a>
+        </div>
+        <div class="detail1">
+          <p class="para1">Watches</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="image1">
+          <a href="#"><img src="https://i.ibb.co/PTwCzBG/jeans.jpg" alt="jeans" border="0" width="100%"
+              height="70%"></a>
+        </div>
+        <div class="detail1">
+          <p class="para1">Jeans</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/xLmv9ZL/indian-wear.jpg" alt="indian-wear" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Indian Wear</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/wpcffgr/western-wear.jpg" alt="western-wear" border="0" width="100%"
+            height="70%">
+        </a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Western Wear</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/1sYD357/sports-wear.jpg" alt="sports-wear" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Sports Wear</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/p0ht6y0/inner-wear.jpg" alt="inner-wear" border="0" width="100%"
+            height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Inner Wear</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/3fDn3WV/kids-wear.jpg" alt="kids-wear" border="0" width="100%"
+            height="70%">
+        </a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Kids Wear</p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="image1">
+        <a href="#"><img src="https://i.ibb.co/KzMhQ99/home-furnishing.jpg" alt="home-furnishing" border="0"
+            width="100%" height="70%"></a>
+      </div>
+      <div class="detail1">
+        <p class="para1">Home Furnishing</p>
+      </div>
+    </div>
+    <!--Categories to Brands-->
+    <h5 class="h4">CATEGORIES TO BRANDS</h5>
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="image">
+          <a href="#"><img src="https://i.ibb.co/5vVWNz2/max.png" alt="max" border="0" width="100%" height="70%"></a>
+        </div>
+
+      </div>
+      <div class="col-lg-2">
+        <div class="image">
+          <a href="#"><img src="https://i.ibb.co/5Ly23wg/levis.png" alt="levis" border="0" width="100%"
+              height="70%"></a>
+        </div>
+
+      </div>
+      <div class="col-lg-2">
+        <div class="image">
+          <a href="#"><img src="https://i.ibb.co/j8N76dd/hm.jpg" alt="hm" border="0" width="100%" height="70%"></a>
+        </div>
+
+      </div>
+      <div class="col-lg-2">
+        <div class="image">
+          <a href="#"><img src="https://i.ibb.co/x8RrjDP/metro.jpg" alt="metro" border="0" width="100%"
+              height="70%"></a>
+        </div>
+
+      </div>
+      <div class="col-lg-2">
+        <div class="image">
+          <a href="#"><img src="https://i.ibb.co/SQvW833/nike.png" alt="nike" border="0" width="100%" height="70%"></a>
+        </div>
+
+      </div>
+      <div class="col-lg-2">
+        <div class="image">
+          <a href="#"><img src="https://i.ibb.co/3MpTrHx/biba.png" alt="biba" border="0" width="100%" height="70%"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Footer Section-->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted footend">
+      <hr>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 myntrasite">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Myntra
+              </h6>
+              <p>
+                Fashion is not necessarily about labels.It's not about brands.Its about something else that comes from
+                within you.
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 myntra">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Online Shopping
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Men</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Women</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Kids</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Beauty</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 myntra">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Blogs</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Careers</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Site Map</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+              <div class="logo1">
+                <div class="logo1">
+
+                </div>
+                <div class="logo1 logo2">
+                  <a href="https://www.instagram.com/sujata_sunil_jamdade" target="_blank"><img
+                      src="https://i.ibb.co/BfKjrMy/instagram.jpg" alt="instagram" border="0" width="30px"
+                      height="30px"></a>
+                </div>
+                <div class="logo1">
+                  <a href="https://www.linkedin.com/in/sujata-patil-97016620b/" target="_blank"><img
+                      src="https://i.ibb.co/BgQtSC7/LinkedIn.png" alt="LinkedIn" border="0" width="30px"
+                      height="30px"></a>
+                </div>
+              </div>
+              <br><br><br>
+              <p><i class="fas fa-home me-3"></i>Buildings Alyssa, Begonia and Clover situated in Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village, Varthur Hobli, Bengaluru – 560103, India</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                jamdade21196@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 91 9834628613</p>
+              <p><i class="fas fa-print me-3"></i> + 91 7723451273</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(228, 220, 220, 0.05);">
+        &copy; 2022 www.myntra.com. All rights reserved.
+      </div>
+    </footer>
+
+</body>
+
+</html>
